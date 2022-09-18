@@ -1,0 +1,21 @@
+.navbar-nav {
+    margin-left: auto;
+    column-gap: 27px !important;
+}
+
+.bg-light {
+    background: transparent !important;
+    /* background-color: transparent !important; */
+    --bs-bg-opacity: 0 !important;
+}
+
+.navbar {
+
+
+    position: fixed !important;
+    width: 100% !important;
+}
+
+.navbar-nav li a{
+    color: white;
+}

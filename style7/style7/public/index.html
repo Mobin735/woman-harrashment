@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .costumecon{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+        .card-title{
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .submitButton{
+        display: block;
+        margin: 0 auto;
+        }
+        @media only screen and (min-width: 992px) {
+            .costumeSection1{
+                height: 60rem;
+            } 
+            .costumeSection2{
+                height: 39rem;
+            } 
+        }
+        h1{
+            text-align: center;
+            width: 100%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Complaint Form</h1>
+    <div class="container costumecon">
+        <form action="/" method="post" novalidate>
+            <!-- 1 Details of Complainant -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="card border-dark mb-3 costumeSection1">
+                        <h4 class="card-title"> Details of Complainant</h4>
+                        <div class="card-body">
+                            <label class="form-label">Name of Complainant</label>
+                            <input type="text" name="Name_of_Complainant" class="form-control" id="validationCustom02" placeholder="Harry potter"
+                                style="width:98%;" required />
+                            <label class="form-label">Address</label>
+                            <textarea class="form-control" name="Address_of_Complainant" rows="2" cols="20" style="width:98%;" required> </textarea>
+                            <label for="form-label">State</label>
+                            <select class="form-select usrstate1"   name="State_of_Complainant"id = "usrstate" style="width:98%;" required>
+                                <option selected="selected" value="------SELECT State------">
+                                    <------SELECT STATE------>
+                                </option>
+                                <option value="Andaman_and_Nicobar_Islands">Andaman and Nicobar Islands</option>
+                                <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadra_and_Nagar_Haveli_and_Daman_and_Diu">Dadra and Nagar Haveli and Daman & Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal_Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu_and_Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Ladakh">Ladakh</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Pondicherry">Pondicherry</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil_Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West_Bengal">West Bengal</option>
+
+                            </select>
+
+                            <label for="form-label">District</label>
+                            <select class="form-select"  name="district_of_Complainant" id="usrdis" style="width:98%;" required />
+                            <option value="--------SELECT DISTRICT--------">
+                                <--------SELECT DISTRICT-------->
+                            </option>
+                            
+
+                            </select>
+                            <label for="form-label">Pincode</label>
+                            <input type="number"  name="pincode_of_Complainant" class="form-control" maxlength="6" name="" id="" style="width:98%;"
+                                required>
+
+
+                            <label for="form-label">Email</label>
+                            <input type="email" class="form-control" name="email_of_Complainant"  id="" style="width:98%;" required>
+
+                            <label for="form-label">Mobile on.</label>
+                            <input maxlength="15" type="tel" name="mobileNo_of_Complainant" class="form-control" style="width:98%;" required />
+
+
+                            <label for="form-label">Sex</label>
+                            <select class="form-select"  name="sex_of_Complainant" style="width:98%;">
+                                <option value="------SELECT Gender------">------SELECT Gender------</option>
+                                <option value="6">Not-Mentioned</option>
+                                <option value="5">FEMALE</option>
+                                <option value="4">MALE</option>
+                                <option value="3">BOTH</option>
+                                <option value="2">THIRD GENDER</option>
+                                <option value="1">UNKNOWN</option>
+                            </select>
+                            <!-- End of card-body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                </div>
+
+
+                <!--2 Details of Victim  -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="card border-dark mb-3">
+                        <h4 class="card-title"> Details of Victim</h4>
+                        <div class="card-body">
+                            <h5>Whether the complainant is the victim ?</h5>
+                            <div class="form-check"><input class="form-check-input" id="" type="radio" name="IsvictimComplen"
+                                    value="1" /><label for="rdbCmtVIC_0">Yes</label></div>
+                            <div class="form-check"><input class="form-check-input" id="" type="radio" name="IsvictimComplen"
+                                    value="0" checked="checked" /><label>No</label></div>
+
+                            <label class="form-label">Name of Victim</label>
+                            <input type="text" class="form-control" name="Name_of_Victim" placeholder="Ron weasley" style="width:98%;" />
+                            <label class="form-label">Address</label>
+                            <textarea class="form-control" name="address_of_Victim" rows="2" cols="20" style="width:98%;"> </textarea>
+                            <label for="form-label">State</label>
+                            <select class="form-select usrstate2" name="state_of_Victim" id="usrstate2" style="width:98%;">
+                                <option selected="selected" value="------SELECT State------">
+                                    <------SELECT STATE------>
+                                </option>
+                                <option value="Andaman_and_Nicobar_Islands">Andaman and Nicobar Islands</option>
+                                <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadra_and_Nagar_Haveli_and_Daman_and_Diu">Dadra and Nagar Haveli and Daman & Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal_Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu_and_Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Ladakh">Ladakh</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Pondicherry">Pondicherry</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil_Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West_Bengal">West Bengal</option>
+
+                            </select>
+
+                            <label for="form-label ">District</label>
+                            <select class="form-select" id="usrdis2" name="district_of_Victim" style="width:98%;">
+                                <option value="--------SELECT DISTRICT--------">
+                                    <--------SELECT DISTRICT-------->
+                                </option>
+                            </select>
+                            <label for="form-label">Pincode</label>
+                            <input type="number" class="form-control"  name="pincode_of_Victim" maxlength="6"  id="" style="width:98%;">
+
+
+                            <label for="form-label">Email</label>
+                            <input type="email" class="form-control"  name="email_of_Victim" id="" style="width:98%;">
+
+                            <label for="form-label">Mobile on.</label>
+                            <input maxlength="15" type="tel"  name="mobileNo_of_Victim"class="form-control" style="width:98%;" />
+
+
+                            <label for="form-label">Sex</label>
+                            <select class="form-select"  name="sex_of_Victim" style="width:98%;">
+                                <option value="------SELECT Gender------">------SELECT Gender------</option>
+                                <option value="6">Not-Mentioned</option>
+                                <option value="5">FEMALE</option>
+                                <option value="4">MALE</option>
+                                <option value="3">BOTH</option>
+                                <option value="2">THIRD GENDER</option>
+                                <option value="1">UNKNOWN</option>
+                            </select>
+
+                            <label for="form-label">Date of Birth</label>
+                            <input class="form-control" type="date" name="DOB_of_Victim" id="" style="width:98%;">
+                            <label for="form-label">Religion</label>
+                            <select name="religion_of_Victim" id="" class="form-select">
+                                <option value="------SELECT Religion------">------SELECT Religion------</option>
+                                <option value="7">Not-Mentioned</option>
+                                <option value="6">HINDU</option>
+                                <option value="5">MUSLIMS</option>
+                                <option value="4">SIKH</option>
+                                <option value="3">CHIRSTIAN</option>
+                                <option value="2">OTHERS</option>
+                                <option value="1">UNKNOWN</option>
+
+                            </select>
+                            <label for="form-label">Caste</label>
+                            <select name="caste_of_Victim" id="" class="form-select">
+                                <option value="------SELECT Caste------">------SELECT Caste------</option>
+                                <option value="6">NOT-MENTIONED</option>
+                                <option value="5">SCHEDULE CAST</option>
+                                <option value="4">SCHEDULE TRIBE</option>
+                                <option value="3">OTHER BACKWARD CLASSES</option>
+                                <option value="2">GENERAL</option>
+                                <option value="1">UNKNOWN</option>
+
+                            </select>
+
+
+                            <label for="form-label">Whether differently abled </label>
+                            <select name="abled_of_Victim" id="" class="form-select">
+                                <option value="1">NOT APPLICABLE</option>
+                                <option value="2">MENTALLY</option>
+                                <option value="3">PHYSICALLY</option>
+
+                            </select>
+
+                            <!-- End of card-body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                </div>
+                <!--3 Details of Respondent (Opposite party) -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="card border-dark mb-3">
+                        <h4 class="card-title"> Details of Complainant</h4>
+                        <div class="card-body">
+                            <label class="form-label">Name of Complainant</label>
+                            <input type="text" class="form-control" name="Name_of_Respondent" id="validationCustom02" placeholder="Harry potter"
+                                style="width:98%;" required />
+                            <label class="form-label">Address</label>
+                            <textarea class="form-control"  name="address_of_Respondent" rows="2" cols="20" style="width:98%;" required> </textarea>
+                            <label for="form-label">State</label>
+
+
+                            <select class="form-select usrstate3" name="state_of_Respondent" id="usrstate3" style="width:98%;" required>
+                                <option selected="selected" value="------SELECT State------">
+                                    <------SELECT STATE------>
+                                </option>
+                                <option value="Andaman_and_Nicobar_Islands">Andaman and Nicobar Islands</option>
+                                <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadra_and_Nagar_Haveli_and_Daman_and_Diu">Dadra and Nagar Haveli and Daman & Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal_Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu_and_Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Ladakh">Ladakh</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Pondicherry">Pondicherry</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil_Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West_Bengal">West Bengal</option>
+    
+     
+
+                            </select>
+
+                            <label for="form-label">District</label>
+                            <select class="form-select" id="usrdis3" name="district_of_Respondent" style="width:98%;" required />
+                            <option value="--------SELECT DISTRICT--------">
+                                <--------SELECT DISTRICT-------->
+                            </option>
+                            <option value="--------SELECT DISTRICT--------">
+                                <--------SELECT DISTRICT-------->
+                            </option>
+
+                            </select>
+                            <label for="form-label">Pincode</label>
+                            <input type="number" class="form-control" name="pincode_of_Respondent" maxlength="6"  id="" style="width:98%;">
+
+
+                            <label for="form-label">Email</label>
+                            <input type="email" class="form-control" name="email_of_Respondent"  id="" style="width:98%;">
+
+                            <label for="form-label">Mobile on.</label>
+                            <input maxlength="15" type="tel"  name="mobileNo_of_Respondent" class="form-control" style="width:98%;" />
+
+
+                            <label for="form-label">Sex</label>
+                            <select class="form-select" name="sex_of_Respondent" style="width:98%;">
+                                <option value="------SELECT Gender------">------SELECT Gender------</option>
+                                <option value="6">Not-Mentioned</option>
+                                <option value="5">FEMALE</option>
+                                <option value="4">MALE</option>
+                                <option value="3">BOTH</option>
+                                <option value="2">THIRD GENDER</option>
+                                <option value="1">UNKNOWN</option>
+                            </select>
+                            <!-- End of card-body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                </div>
+
+
+                <!--4 Details of Complaint  -->
+                
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card border-dark mb-3 costumeSection2">
+                            <h4 class="card-title"> Details of Complaint</h4>
+                            <div class="card-body">
+                                <label class="form-label">Department of the Respondent (if applicable)</label>
+                                <input type="text" class="form-control" name="department_of_the_respondent" id="" style="width:98%;" />
+                                <label class="form-label">Date of Incident</label>
+                                <input type="date" class="form-control" name="Date_of_Incident" id="" style="width:98%;">
+                                <label for="form-label">Is your case pending before any court </label>
+                                <div class="form-check"><input class="form-check-input" id="" type="radio"
+                                        name="pending_courtcase" value="1" /><label for="rdbCmtVIC_0">Yes</label></div>
+                                <div class="form-check"><input class="form-check-input" id="" type="radio"
+                                        name="pending_courtcase" value="0" checked="checked" /><label>No</label></div>
+
+
+
+                                <label for="form-label">if yes, then mention case number</label>
+                                <input type="text" maxlength="100" class="form-control" name="case_number" style="width:98%;">
+                                <label for="form-label"> Is your case pending before any State Commission for
+                                    Women</label>
+                                <div class="form-check"><input class="form-check-input" id="" type="radio"
+                                        name="pending_womencourt" value="1" /><label for="rdbCmtVIC_0">Yes</label></div>
+                                <div class="form-check"><input class="form-check-input" id="" type="radio"
+                                        name="pending_womencourt" value="0" checked="checked" /><label>No</label></div>
+
+
+                                <label for="form-label">if yes, then mention case number</label>
+                                <input name="women_court_case_number" type="text" maxlength="100" id="" class="form-control"
+                                    style="width:98%;" />
+
+                                <!-- End of card-body -->
+                            </div>
+                            <!-- End of card -->
+                        </div>
+
+
+                    </div>
+                
+                <!--5 Insert complete details of the incident -->
+                <div class="col-lg-12">
+                    <div class="card border-dark mb-3">
+                        <h4 class="card-title">5 Insert complete details of the incident</h4>
+                        <div class="card-body">
+                            <label for="">Insert complete details of the incident</label>
+                            <textarea name="details_of_incident" class="form-control" id="" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary submitButton" value="Submit" name="">
+        </form>
+    
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,83 @@
+body {
+    background-color: #a5a8acd4 !important;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 8% !important;
+    row-gap: 55px;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+}
+
+
+.title-first-half {
+    height: fit-content;
+    width: 50%;
+}
+
+.title-second-half {
+    height: fit-content;
+    width: 50%;
+}
+
+.title-first-half-big-text {
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 40px;
+    color: white;
+}    
+
+.title-small-text {
+    text-align: justify;
+    /* margin-top: 25px; */
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.title-first-half p {
+    margin: 0;
+}
+
+.title-second-half-img {
+    display: flex;
+    justify-content: center;
+}
+
+.title-second-half-img img {
+    width: 85%;
+    border: 0.2rem solid white;
+    border-radius: 10%;
+}
+
+
+
+/* .title-first-half-big-text {
+    margin: 0 !important;
+} */
+
+/* <p class="title-first-half-small-text lead">
+                Unwelcome touching or other physical contact
+                Asking or demanding sex or any other sexual activity
+                Making remarks which are of a sexual nature
+                Showing pornographic material which may include videos, magazines, books etc.
+                There is a separate law on sexual harassment at workplaces - The Sexual Harassment of women at workplace
+                (prevention, prohibition and redressal) Act and Rules 2013 . There are provisions in the main criminal
+                law (the Indian Penal Code or IPC) which are different from the special law on sexual harassment:
+
+                The IPC is not limited to sexual harassment at the workplace, but punishes such harassment done
+                anywhere.
+                The IPC makes it possible to file a criminal complaint if you have been sexually harassed, while the
+                special law gives you the option of seeking civil remedies and damages, involving your office
+                administration.
+                The punishment for the first three kinds of sexual harassment is three years as compared to the fourth
+                type (making sexually coloured remarks) which is one year.
+            </p> */
