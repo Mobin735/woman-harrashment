@@ -1,6 +1,6 @@
 @media only screen and (max-width:942px) { 
     .title { 
-        padding-top: 18% !important;
+        /* padding-top: 18% !important; */
         row-gap: 35px;
     }
 
