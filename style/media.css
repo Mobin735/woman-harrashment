@@ -14,7 +14,7 @@
     }
 
     .title-first-half-big-text {
-        font-size: 23px;
+        font-size: 2.6vh;
     }
 
     .title-second-half {
@@ -26,6 +26,6 @@
     }
 
     .title-small-text {
-        font-size: 12px;
+        font-size: 1.2vh;
     }
 }
