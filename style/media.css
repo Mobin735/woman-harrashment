@@ -14,7 +14,7 @@
     }
 
     .title-first-half-big-text {
-        font-size: 2.6vh;
+        font-size: 28px;
     }
 
     .title-second-half {
@@ -26,6 +26,23 @@
     }
 
     .title-small-text {
-        font-size: 1.2vh;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .container {
+        flex-wrap: wrap;
+        row-gap: 75px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-brand {
+        margin-left: 3px !important;
+    }
+
+    .li-cont {
+        margin-left: 6px !important;
     }
 }

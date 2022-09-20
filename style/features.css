@@ -1,0 +1,49 @@
+.features{
+    background-color: #c2cada;
+    margin-top: 115px;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 102px 0px !important;
+    align-items: center;
+    column-gap: 75px;
+}
+
+.f_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.icons {
+    width: fit-content;
+    font-size: 45px;
+    border: 5px solid #9b8787;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.f_btext {
+    width: fit-content;
+    margin: 0;
+    font-size: xx-large;
+    font-style: oblique;
+    font-family: fangsong;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #6f6363;
+}
+
+.f_stext {
+    text-align: center;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: lightslategray;
+}

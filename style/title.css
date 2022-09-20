@@ -1,15 +1,15 @@
 body {
-    background-color: #a5a8acd4 !important;
+    background-color: #a5a8ac !important;
 }
 
 .title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    /* justify-content: center; */
+    height: fit-content;
     width: 80%;
     margin: auto;
-    padding-top: 8% !important;
+    padding-top: 140px !important;
     row-gap: 55px;
 }
 
@@ -30,13 +30,13 @@ body {
 }
 
 .title-first-half-big-text {
-    font-weight: 900;
-    font-family: monospace;
-    font-size: 40px;
+    font-family: 'Dangrek', cursive;
+    font-size: 46px;
     color: white;
 }    
 
 .title-small-text {
+    font-family: 'Titillium Web', sans-serif;
     text-align: justify;
     /* margin-top: 25px; */
     margin-bottom: 0;
