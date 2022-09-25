@@ -31,7 +31,7 @@ body {
 
 .title-first-half-big-text {
     font-family: 'Dangrek', cursive;
-    font-size: 46px;
+    font-size: 46px !important;
     color: white;
 }    
 
@@ -40,7 +40,7 @@ body {
     text-align: justify;
     /* margin-top: 25px; */
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
 .title-first-half p {

@@ -3,6 +3,7 @@ console.log(screen.height);
 
 const navbar = document.getElementById("nav-bar");
 const burger = document.querySelector(".toogle");
+const top_btn = document.querySelector(".top_scroller")
 
 document.addEventListener('scroll', function () {
 
@@ -20,6 +21,17 @@ document.addEventListener('scroll', function () {
         navbar.style.boxShadow = "none";
         navbar.style.backgroundColor = "transparent";
     }
+
+    // console.log(scrollY);
+
+    if (scrollY > 300) {  
+        top_btn.style.bottom = 0;
+        top_btn.style.opacity = 1;
+    }
+    else {
+        top_btn.style.bottom = -100 + 'px';
+        top_btn.style.opacity = 0;
+    }
 });
 
 burger.addEventListener("click", (e) => {
@@ -34,7 +46,7 @@ window.onscroll = () => {
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 305) {
+        if (pageYOffset >= sectionTop - 900) {
             current = "#" + section.getAttribute("id");
         }
     });
@@ -46,6 +58,8 @@ window.onscroll = () => {
         }
     });
 };
+
+
 
 
 // if (scrollY < 10) {

@@ -1,0 +1,49 @@
+.contact {
+    background: #606068;
+    padding: 0px 40px;
+}
+
+.contact_1 {
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_no {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.contact_no p {
+    width: fit-content;
+    margin: 0;
+    color: #d9dce7;
+}
+
+.c_text {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 15px !important;
+}
+
+.cc_text {
+    font-family: 'Titillium Web';
+    font-weight: 100;
+    color: #cecece !important;
+}
+
+.contact_2 {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text {
+    font-family: 'Titillium Web';
+    margin: 0;
+    width: fit-content;
+    color: #3a3d3d;
+}
